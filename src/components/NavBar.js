@@ -1,13 +1,13 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from "../assets/pooch-book-logo.png";
+import logo from "../assets/pooch-book-removebg-preview.png";
 
 const NavBar = () => {
   return (
     <Navbar expand="md" fixed="top">
       <Container>
         <Navbar.Brand>
-          <img src={logo} alt="logo" height="90" />
+          <img src={logo} alt="logo" height="70" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
