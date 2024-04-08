@@ -16,13 +16,26 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto text-left">
-            <NavLink to="/">
+            <NavLink
+              exact
+              className={styles.NavLink}
+              activeClassName={styles.Active}
+              to="/"
+            >
               <i className="fa-solid fa-house-chimney"></i>Home
             </NavLink>
-            <NavLink to="/signin">
+            <NavLink
+              className={styles.NavLink}
+              activeClassName={styles.Active}
+              to="/signin"
+            >
               <i className="fa-solid fa-right-to-bracket"></i>Sign In
             </NavLink>
-            <NavLink to="/signup">
+            <NavLink
+              className={styles.NavLink}
+              activeClassName={styles.Active}
+              to="/signup"
+            >
               <i className="fa-solid fa-user-plus"></i>Sign Up
             </NavLink>
           </Nav>
