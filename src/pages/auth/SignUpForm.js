@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import hero from "../../assets/pooch-book-sign-up-image.png"
 
 import styles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
@@ -28,7 +29,7 @@ const SignUpForm = () => {
       >
         <Image
           className={`${appStyles.FillerImage}`}
-          src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero2.jpg"}
+          src={hero}
         />
       </Col>
     </Row>
