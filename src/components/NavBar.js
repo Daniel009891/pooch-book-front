@@ -7,6 +7,16 @@ import { NavLink } from "react-router-dom";
 import { useCurrentUser } from "../contexts/CurrentUserContext";
 
 const NavBar = () => {
+
+  const addPostIcon = (
+    <NavLink
+      className={styles.NavLink}
+      activeClassName={styles.Active}
+      to="/posts/create"
+    >
+      <i class="fa-regular fa-square-plus"></i>Add post
+    </NavLink>
+  );
   const currentUser = useCurrentUser();
   const loggedInIcons = <>{currentUser?.username}</>
   const loggedOutIcons = (
@@ -37,6 +47,7 @@ const NavBar = () => {
             <img src={logo} alt="logo" height="70" />
           </Navbar.Brand>
         </NavLink>
+        {currentUser && addPostIcon}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto text-left">
