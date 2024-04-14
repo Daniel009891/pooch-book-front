@@ -4,10 +4,25 @@ import logo from "../assets/pooch-book-removebg-preview.png";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
 
-import { useCurrentUser } from "../contexts/CurrentUserContext";
+import {
+  useCurrentUser,
+  useSetCurrentUser,
+} from "../contexts/CurrentUserContext";
 import Avatar from "./Avatar";
+import axios from "axios";
 
 const NavBar = () => {
+  const setCurrentUser = useSetCurrentUser();
+
+  const handleSignOut = async () => {
+    try {
+      await axios.post("dj-rest-auth/logout/");
+      setCurrentUser(null);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   const addPostIcon = (
     <NavLink
       className={styles.NavLink}
@@ -34,14 +49,14 @@ const NavBar = () => {
       >
         <i class="fa-solid fa-heart"></i>Liked
       </NavLink>
-      <NavLink className={styles.NavLink} to="/" onClick={() => {}}>
+      <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
         <i className="fa-solid fa-right-to-bracket"></i>Sign out
       </NavLink>
       <NavLink
         className={styles.NavLink}
         to={`/profiles/${currentUser?.profile_id}`}
       >
-        <Avatar src={currentUser?.profile_image} text='Profile' height={40}/>
+        <Avatar src={currentUser?.profile_image} text="Profile" height={40} />
       </NavLink>
     </>
   );
