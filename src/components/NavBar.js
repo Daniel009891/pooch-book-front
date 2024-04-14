@@ -1,13 +1,12 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/pooch-book-removebg-preview.png";
-import styles from "../styles/NavBar.module.css"
+import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
 
 import { useCurrentUser } from "../contexts/CurrentUserContext";
 
 const NavBar = () => {
-
   const addPostIcon = (
     <NavLink
       className={styles.NavLink}
@@ -18,7 +17,33 @@ const NavBar = () => {
     </NavLink>
   );
   const currentUser = useCurrentUser();
-  const loggedInIcons = <>{currentUser?.username}</>
+  const loggedInIcons = (
+    <>
+      <NavLink
+        className={styles.NavLink}
+        activeClassName={styles.Active}
+        to="/feed"
+      >
+        <i class="fa-regular fa-newspaper"></i>Feed
+      </NavLink>
+      <NavLink
+        className={styles.NavLink}
+        activeClassName={styles.Active}
+        to="/liked"
+      >
+        <i class="fa-solid fa-heart"></i>Liked
+      </NavLink>
+      <NavLink className={styles.NavLink} to="/" onClick={() => {}}>
+        <i className="fa-solid fa-right-to-bracket"></i>Sign out
+      </NavLink>
+      <NavLink
+        className={styles.NavLink}
+        to={`/profiles/${currentUser?.profile_id}`}
+      >
+        <img src={currentUser?.profile_image} />
+      </NavLink>
+    </>
+  );
   const loggedOutIcons = (
     <>
       <NavLink
@@ -37,7 +62,6 @@ const NavBar = () => {
       </NavLink>
     </>
   );
-
 
   return (
     <Navbar className={styles.NavBar} expand="md" fixed="top">
