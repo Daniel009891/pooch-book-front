@@ -12,6 +12,7 @@ import Avatar from "./Avatar";
 import axios from "axios";
 
 const NavBar = () => {
+  const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();
 
   const handleSignOut = async () => {
@@ -32,7 +33,6 @@ const NavBar = () => {
       <i class="fa-regular fa-square-plus"></i>Add post
     </NavLink>
   );
-  const currentUser = useCurrentUser();
   const loggedInIcons = (
     <>
       <NavLink
