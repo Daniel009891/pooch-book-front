@@ -33,7 +33,7 @@ const NavBar = () => {
       activeClassName={styles.Active}
       to="/posts/create"
     >
-      <i class="fa-regular fa-square-plus"></i>Add post
+      <i className="fa-regular fa-square-plus"></i>Add post
     </NavLink>
   );
   const loggedInIcons = (
@@ -43,14 +43,14 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/feed"
       >
-        <i class="fa-regular fa-newspaper"></i>Feed
+        <i className="fa-regular fa-newspaper"></i>Feed
       </NavLink>
       <NavLink
         className={styles.NavLink}
         activeClassName={styles.Active}
         to="/liked"
       >
-        <i class="fa-solid fa-heart"></i>Liked
+        <i className="fa-solid fa-heart"></i>Liked
       </NavLink>
       <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
         <i className="fa-solid fa-right-to-bracket"></i>Sign out
