@@ -6,6 +6,7 @@ import "./api/axiosDefaults";
 import SignUpForm from "./pages/auth/SignUpForm";
 import SignInForm from "./pages/auth/SignInForm";
 import PostCreateForm from "./pages/posts/PostCreateForm";
+import PostEditForm from "./pages/posts/PostEditForm";
 import PostPage from "./pages/posts/PostPage"
 import { useCurrentUser } from "./contexts/CurrentUserContext";
 import PostsPage from "./pages/posts/PostsPage";
@@ -16,7 +17,7 @@ function App() {
   const profile_id = currentUser?.profile_id || ""; 
 
   return (
-    <div className={styles.App}> 
+    <div className={styles.App}>
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
@@ -50,7 +51,8 @@ function App() {
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
           <Route exact path="/posts/create" render={() => <PostCreateForm />} />
-          <Route exact path="/posts/:id" render={() => <PostPage /> } />
+          <Route exact path="/posts/:id/edit" render={() => <PostEditForm />} />
+          <Route exact path="/posts/:id" render={() => <PostPage />} />
           <Route render={() => <p>Page Not Found!</p>} />
         </Switch>
       </Container>
