@@ -24,17 +24,22 @@ const Comment = (props) => {
 
   const handleDelete = async () => {
     try {
-      await axiosRes.delete(`/comments/${id}/`)
-      setPost(prevPost => ({
-        results: [{
-          ...prevPost.results[0],
-          comment_count: prevPost.results[0].comment_count - 1
-        }]
-      }))
-    } catch (err) {
-      
-    }
-  }
+      await axiosRes.delete(`/comments/${id}/`);
+      setPost((prevPost) => ({
+        results: [
+          {
+            ...prevPost.results[0],
+            comments_count: prevPost.results[0].comments_count - 1,
+          },
+        ],
+      }));
+
+      setComments((prevComments) => ({
+        ...prevComments,
+        results: prevComments.results.filter((comment) => comment.id !== id),
+      }));
+    } catch (err) {}
+  };
 
   return (
     <div>
@@ -49,7 +54,7 @@ const Comment = (props) => {
           <p>{content}</p>
         </Media.Body>
         {is_owner && (
-          <MoreDropdown handleEdit={() => {}} handleDelete={() => {}} />
+          <MoreDropdown handleEdit={() => {}} handleDelete={handleDelete} />
         )}
       </Media>
     </div>
