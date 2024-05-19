@@ -96,6 +96,14 @@ const Post = (props) => {
     }
   };
 
+  const handleUndownvote = async () => {
+    try {
+      
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
   return (
     <Card className={styles.Post}>
       <Card.Body>
