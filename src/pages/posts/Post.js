@@ -96,9 +96,17 @@ const Post = (props) => {
     }
   };
 
-  const handleUndownvote = async () => {
+  const handleUnDownvote = async () => {
     try {
-      
+      await axiosRes.delete(`/downvotes/${downvote_id}/`);
+      setPosts((prevPosts) => ({
+        ...prevPosts,
+        results: prevPosts.results.map((post) => {
+          return post.id === id
+          ? { ...post, downvotes_count: post.downvotes_count - 1, downvote_id: null }
+          : post;
+        })
+      }))
     } catch (err) {
       console.log(err)
     }
@@ -162,7 +170,7 @@ const Post = (props) => {
               <i className={`fas fa-arrow-down ${styles.Space}`} />
             </OverlayTrigger>
           ) : downvote_id ? (
-            <span onClick={() => {}}>
+            <span onClick={handleUnDownvote}>
               <i className={`fas fa-arrow-down ${styles.Arrow} ${styles.Space}`} />
             </span>
           ) : currentUser ? (
@@ -174,7 +182,7 @@ const Post = (props) => {
               placement="top"
               overlay={<Tooltip>Log in to downvote a post!</Tooltip>}
             >
-              <i className="far fa-arrow-down" />
+              <i className="fas fa-arrow-down" />
             </OverlayTrigger>
           )}
           {downvotes_count}
