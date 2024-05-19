@@ -76,13 +76,27 @@ const Post = (props) => {
     }
   };
 
+  // custom code
+
   const handleDownvote = async () => {
     try {
-      
+      const { data } = await axiosRes.post("/downvotes/", { post: id });
+      setPosts((prevPosts) => ({
+        ...prevPosts,
+        results: prevPosts.results.map((post) => {
+          return post.id === id
+            ? {
+                ...post,
+                downvotes_count: post.downvotes_count + 1,
+                downvote_id: data.id,
+              }
+            : post;
+        }),
+      }));
     } catch (err) {
-      console.log(err)
+      console.log(err);
     }
-  }
+  };
 
   return (
     <Card className={styles.Post}>
