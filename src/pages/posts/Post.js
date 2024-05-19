@@ -86,7 +86,9 @@ const Post = (props) => {
         results: prevPosts.results.map((post) => {
           return post.id === id
             ? {
-                ...post, downvotes_count: post.downvotes_count + 1, downvote_id: data.id
+                ...post,
+                downvotes_count: post.downvotes_count + 1,
+                downvote_id: data.id,
               }
             : post;
         }),
@@ -96,6 +98,8 @@ const Post = (props) => {
     }
   };
 
+  // custom code
+
   const handleUnDownvote = async () => {
     try {
       await axiosRes.delete(`/downvotes/${downvote_id}/`);
@@ -103,14 +107,18 @@ const Post = (props) => {
         ...prevPosts,
         results: prevPosts.results.map((post) => {
           return post.id === id
-          ? { ...post, downvotes_count: post.downvotes_count - 1, downvote_id: null }
-          : post;
-        })
-      }))
+            ? {
+                ...post,
+                downvotes_count: post.downvotes_count - 1,
+                downvote_id: null,
+              }
+            : post;
+        }),
+      }));
     } catch (err) {
-      console.log(err)
+      console.log(err);
     }
-  }
+  };
 
   return (
     <Card className={styles.Post}>
@@ -131,7 +139,7 @@ const Post = (props) => {
           </div>
         </Media>
       </Card.Body>
-      <Link to={`posts/${id}`}>
+      <Link to={`/posts/${id}`}>
         <Card.Img src={image} alt={title} />
       </Link>
       <Card.Body>
@@ -171,11 +179,15 @@ const Post = (props) => {
             </OverlayTrigger>
           ) : downvote_id ? (
             <span onClick={handleUnDownvote}>
-              <i className={`fas fa-arrow-down ${styles.Arrow} ${styles.Space}`} />
+              <i
+                className={`fas fa-arrow-down ${styles.Arrow} ${styles.Space}`}
+              />
             </span>
           ) : currentUser ? (
             <span onClick={handleDownvote}>
-              <i className={`fas fa-arrow-down ${styles.ArrowOutline} ${styles.Space}`} />
+              <i
+                className={`fas fa-arrow-down ${styles.ArrowOutline} ${styles.Space}`}
+              />
             </span>
           ) : (
             <OverlayTrigger
@@ -187,7 +199,7 @@ const Post = (props) => {
           )}
           {downvotes_count}
           <Link>
-            <i className={`far fa-comments ${styles.Space}`}/>
+            <i className={`far fa-comments ${styles.Space}`} />
           </Link>
           {comments_count}
         </div>
