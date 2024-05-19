@@ -86,9 +86,7 @@ const Post = (props) => {
         results: prevPosts.results.map((post) => {
           return post.id === id
             ? {
-                ...post,
-                downvotes_count: post.downvotes_count + 1,
-                downvote_id: data.id,
+                ...post, downvotes_count: post.downvotes_count + 1, downvote_id: data.id
               }
             : post;
         }),
@@ -148,6 +146,30 @@ const Post = (props) => {
             </OverlayTrigger>
           )}
           {likes_count}
+          {is_owner ? (
+            <OverlayTrigger
+              placement="top"
+              overlay={<Tooltip>You can't downvote your own post!</Tooltip>}
+            >
+              <i className="" />
+            </OverlayTrigger>
+          ) : downvote_id ? (
+            <span onClick={() => {}}>
+              <i className={`fas fa-heart ${styles.Heart}`} />
+            </span>
+          ) : currentUser ? (
+            <span onClick={handleDownvote}>
+              <i className={`far fa-heart ${styles.HeartOutline}`} />
+            </span>
+          ) : (
+            <OverlayTrigger
+              placement="top"
+              overlay={<Tooltip>Log in to downvote a post!</Tooltip>}
+            >
+              <i className="far fa-heart" />
+            </OverlayTrigger>
+          )}
+          {downvotes_count}
           <Link>
             <i className="far fa-comments" />
           </Link>
