@@ -151,27 +151,27 @@ const Post = (props) => {
               placement="top"
               overlay={<Tooltip>You can't downvote your own post!</Tooltip>}
             >
-              <i className="" />
+              <i className={`fas fa-arrow-down ${styles.Space}`} />
             </OverlayTrigger>
           ) : downvote_id ? (
             <span onClick={() => {}}>
-              <i className={`fas fa-heart ${styles.Heart}`} />
+              <i className={`fas fa-arrow-down ${styles.Arrow} ${styles.Space}`} />
             </span>
           ) : currentUser ? (
             <span onClick={handleDownvote}>
-              <i className={`far fa-heart ${styles.HeartOutline}`} />
+              <i className={`fas fa-arrow-down ${styles.ArrowOutline} ${styles.Space}`} />
             </span>
           ) : (
             <OverlayTrigger
               placement="top"
               overlay={<Tooltip>Log in to downvote a post!</Tooltip>}
             >
-              <i className="far fa-heart" />
+              <i className="far fa-arrow-down" />
             </OverlayTrigger>
           )}
           {downvotes_count}
           <Link>
-            <i className="far fa-comments" />
+            <i className={`far fa-comments ${styles.Space}`}/>
           </Link>
           {comments_count}
         </div>

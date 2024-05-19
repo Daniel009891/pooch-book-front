@@ -22,3 +22,15 @@ h5 {
 .HeartOutline:hover {
   color: #f85032;
 }
+
+.Arrow {
+  color: #ffa500;
+}
+
+.ArrowOutline:hover {
+  color: #ffa500;
+}
+
+.Space {
+  margin-left: 10px;
+}
