@@ -17,6 +17,8 @@ const Post = (props) => {
     comments_count,
     likes_count,
     like_id,
+    downvotes_count,
+    downvote_id,
     title,
     content,
     image,
@@ -73,6 +75,14 @@ const Post = (props) => {
       console.log(err);
     }
   };
+
+  const handleDownvote = async () => {
+    try {
+      
+    } catch (err) {
+      console.log(err)
+    }
+  }
 
   return (
     <Card className={styles.Post}>
