@@ -127,7 +127,12 @@ const Post = (props) => {
       setPosts((prevPosts) => ({
         ...prevPosts,
         results: prevPosts.results.map((post) => {
-          return post.id === id ? { ...post, saved_id: data.id } : post;
+          return post.id === id
+            ? {
+                ...post,
+                saved_id: data.id,
+              }
+            : post;
         }),
       }));
     } catch (err) {
@@ -165,7 +170,7 @@ const Post = (props) => {
             ) : (
               <OverlayTrigger
                 placement="top"
-                overlay={<Tooltip>Sign in to save a post!</Tooltip>}
+                overlay={<Tooltip>Sign in to save posts!</Tooltip>}
               >
                 <Link to="/signin">
                   <i className="fa-regular fa-bookmark" />
