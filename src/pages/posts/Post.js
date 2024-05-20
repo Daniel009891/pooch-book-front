@@ -121,6 +121,8 @@ const Post = (props) => {
     }
   };
 
+  // custom code
+
   const handleSave = async () => {
     try {
       const { data } = await axiosRes.post("/saved/", { post: id });
@@ -140,14 +142,23 @@ const Post = (props) => {
     }
   };
 
+  // custom code
+
   const handleUnsave = async () => {
     try {
-      
+      await axiosRes.delete(`/saved/${saved_id}`);
+      setPosts((prevPosts) => ({
+        ...prevPosts,
+        results: prevPosts.results.map((post) => {
+          return post.id === id
+            ? { ...post, saved_count: post.saved_count - 1, saved_id: null }
+            : post;
+        }),
+      }));
     } catch (err) {
-      console.log(err)
-      
+      console.log(err);
     }
-  }
+  };
 
   return (
     <Card className={styles.Post}>
@@ -167,7 +178,7 @@ const Post = (props) => {
                 <i className="fa-regular fa-bookmark" />
               </OverlayTrigger>
             ) : saved_id ? (
-              <span onClick={() => {}}>
+              <span onClick={handleUnsave}>
                 <i className={`fa-solid fa-bookmark ${styles.Bookmark}`} />
               </span>
             ) : currentUser ? (
