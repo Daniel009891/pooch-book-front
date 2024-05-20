@@ -123,12 +123,17 @@ const Post = (props) => {
 
   const handleSave = async () => {
     try {
-      
+      const { data } = await axiosRes.post("/saved/", { post: id });
+      setPosts((prevPosts) => ({
+        ...prevPosts,
+        results: prevPosts.results.map((post) => {
+          return post.id === id ? { ...post, saved_id: data.id } : post;
+        }),
+      }));
     } catch (err) {
-      console.log(err)
-      
+      console.log(err);
     }
-  }
+  };
 
   return (
     <Card className={styles.Post}>
