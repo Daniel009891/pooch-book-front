@@ -19,6 +19,7 @@ const Post = (props) => {
     like_id,
     downvotes_count,
     downvote_id,
+    saved_id,
     title,
     content,
     image,
@@ -119,6 +120,15 @@ const Post = (props) => {
       console.log(err);
     }
   };
+
+  const handleSave = async () => {
+    try {
+      
+    } catch (err) {
+      console.log(err)
+      
+    }
+  }
 
   return (
     <Card className={styles.Post}>
