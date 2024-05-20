@@ -38,3 +38,7 @@ h5 {
 .Bookmark {
   color: #ffff00;
 }
+
+.BookmarkOutline:hover {
+  color: #ffff00;
+}

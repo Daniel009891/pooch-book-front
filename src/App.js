@@ -52,6 +52,16 @@ function App() {
               />
             )}
           />
+          <Route
+            exact
+            path="/saved"
+            render={() => (
+              <PostsPage
+                message="No results found. Please adjust the search keyword or save a post."
+                filter={`saved__owner__profile=${profile_id}&ordering=-saved__created_at&`}
+              />
+            )}
+          />
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
           <Route exact path="/posts/create" render={() => <PostCreateForm />} />

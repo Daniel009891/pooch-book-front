@@ -50,6 +50,13 @@ const NavBar = () => {
       <NavLink
         className={styles.NavLink}
         activeClassName={styles.Active}
+        to="/saved"
+      >
+        <i className="fa-regular fa-bookmark"></i>Saved
+      </NavLink>
+      <NavLink
+        className={styles.NavLink}
+        activeClassName={styles.Active}
         to="/liked"
       >
         <i className="fa-solid fa-heart"></i>Liked

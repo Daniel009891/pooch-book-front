@@ -145,15 +145,33 @@ const Post = (props) => {
           </Link>
           <div className="d-flex align-items-center">
             <span>{updated_at}</span>
-            { is_owner ? (
-              <OverlayTrigger placement="top" overlay={<Tooltip>You cannot save your own post!</Tooltip>} >
-                <i className='fa-regular fa-bookmark'/>
+            {is_owner ? (
+              <OverlayTrigger
+                placement="top"
+                overlay={<Tooltip>You cannot save your own post!</Tooltip>}
+              >
+                <i className="fa-regular fa-bookmark" />
               </OverlayTrigger>
-            ) : save_id ? (
+            ) : saved_id ? (
               <span onClick={() => {}}>
-                <i className={`fa-solid fa-bookmark ${styles.Bookmark}`}/>
+                <i className={`fa-solid fa-bookmark ${styles.Bookmark}`} />
               </span>
-            ) : () : () }
+            ) : currentUser ? (
+              <span onClick={handleSave}>
+                <i
+                  className={`fa-regular fa-bookmark ${styles.BookmarkOutline}`}
+                />
+              </span>
+            ) : (
+              <OverlayTrigger
+                placement="top"
+                overlay={<Tooltip>Sign in to save a post!</Tooltip>}
+              >
+                <Link to="/signin">
+                  <i className="fa-regular fa-bookmark" />
+                </Link>
+              </OverlayTrigger>
+            )}
             {is_owner && postPage && (
               <MoreDropdown
                 handleEdit={handleEdit}
