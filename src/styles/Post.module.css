@@ -27,6 +27,10 @@ h5 {
   color: #ffa500;
 }
 
+.Arrow:hover {
+  color: #2142b2;
+}
+
 .ArrowOutline:hover {
   color: #ffa500;
 }
@@ -36,9 +40,9 @@ h5 {
 }
 
 .Bookmark {
-  color: #ffff00;
+  color: #0077b6;
 }
 
 .BookmarkOutline:hover {
-  color: #ffff00;
+  color: #0077b6;
 }
