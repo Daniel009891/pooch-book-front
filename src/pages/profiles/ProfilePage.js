@@ -22,7 +22,9 @@ import {
   useProfileData,
   useSetProfileData,
 } from "../../contexts/ProfileDataContext";
-import { Button, Image } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Image from "react-bootstrap/Image";
+
 
 function ProfilePage() {
   const [hasLoaded, setHasLoaded] = useState(false);
