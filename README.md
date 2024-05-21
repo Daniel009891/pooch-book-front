@@ -203,9 +203,11 @@ The home screen and landing page, with the "recommended users to follow" sidebar
 
 ### **Post Page**
 
+- The post's page, with the recommended user to follow sidebar.
+- Heart and down arrow buttons to like and downvote any posts you wish. Each icon goes a solid colour once a user has clicked on it
 
-![screenshot]()
-![screenshot]()
+![screenshot](documentation/features/post-page-top.png)
+![screenshot](documentation/features/post-page-bottom.png)
 
 
 ### **Feed**
