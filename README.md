@@ -7,15 +7,15 @@
 ![screenshot]()
 
 
-A live version of this website will be found here:
+A live version of this website will be found here: https://pooch-book-front-57849ba2db72.herokuapp.com/
 
-* Deployed FrontEnd - 
+* Deployed FrontEnd - https://pooch-book-front-57849ba2db72.herokuapp.com/
 
-* Deployed BackEnd API - 
+* Deployed BackEnd API - https://pooch-book-api-b940e6d3707a.herokuapp.com/
 
-* BackEnd Repo - 
+* BackEnd Repo - https://github.com/Daniel009891/my-api
 
-* FrontEnd Repo - 
+* FrontEnd Repo - https://github.com/Daniel009891/pooch-book-front
 
 
 
