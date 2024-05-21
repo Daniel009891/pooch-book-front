@@ -204,7 +204,10 @@ The home screen and landing page, with the "recommended users to follow" sidebar
 ### **Post Page**
 
 - The post's page, with the recommended user to follow sidebar.
-- Heart and down arrow buttons to like and downvote any posts you wish. Each icon goes a solid colour once a user has clicked on it
+- Heart and down arrow buttons to like and downvote any posts you wish. Each icon goes a solid colour once a user has clicked on it, these icons will also undo if clicked again.
+- On the top right of the post beside the date posted, you have a bookmark icon to save this post, which later you can view in the "Saved" section from the NavBar. If you save a post, it will be indicated by the "bookmark" icon, which goes a solid colour once it's clicked, if clicked again, this will undo the action of saving the post.
+- 
+
 
 ![screenshot](documentation/features/post-page-top.png)
 ![screenshot](documentation/features/post-page-bottom.png)
