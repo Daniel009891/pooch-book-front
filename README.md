@@ -1,6 +1,14 @@
 # **Poochbook**
 
+Poochbook is a social media platform to share all the lovely memories or silly moments you have with your pets. It was prodominently created for dogs however any pets are welcome! On poochbook you can create your fury best friend a profile, which gives you access to add posts showing what they've been up to, like or downvote other users posts, comment on posts and save your favoirite posts. You can also follow your favourite members, so you always stay in the loop with their crazy antics on a dedicated feed page. 
 
+Once a memeber has signed up they will be directed to the sign in page. After signing in successfully you will be directed to the hompage,which displays all the posts from other members. To the right hand side (or top if on mobile) you have a popular profiles section, this is where the most followed users are located. if you decide to follow one or more of these, you will be able to see their posts in the dedicated feed section of the NavBar. If you click your profile in the top right corner you can add a picture to represent your pet, update your bio and username. Profile stats are also displayed including number of posts, followers and following. The NavBar also contains a saved section, this will update when you save your favourite posts from either the feed or homepage. 
+
+Once you're on the HomePage, you can "Add post", you can also use the search bar above the "Add post" section to search through all posts using a keyword or a user's name.
+
+On the posts page you will see the full post on a card, the number of likes, number of downvotes and number of comments at the bottom section. At the top section the users profile, the date the post was created on and the save icon is displayed. There is a dropdown menu also in the top section represented by three dots, this allows users to editor delete posts they own. This is the same with comments the user owns.
+
+This project is the final of five projects that need to be completed to receive a diploma in Software Development from The Code Institute.
 
 ## **Responsive screen display**
 
