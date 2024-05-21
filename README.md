@@ -4,7 +4,7 @@
 
 ## **Responsive screen display**
 
-![screenshot]()
+![screenshot](documentation/features/responsive-design.png)
 
 
 A live version of this website will be found here: https://pooch-book-front-57849ba2db72.herokuapp.com/
