@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../assets/pooch-book-removebg-preview.png";
+import logo from "../assets/poochbook-logo-new-removebg-preview.png";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
 
@@ -103,7 +103,7 @@ const NavBar = () => {
       <Container>
         <NavLink to="/">
           <Navbar.Brand>
-            <img src={logo} alt="logo" height="70" />
+            <img src={logo} className={styles.Logo} alt="logo" height="70" />
           </Navbar.Brand>
         </NavLink>
         {currentUser && addPostIcon}
