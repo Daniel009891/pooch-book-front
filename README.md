@@ -376,30 +376,30 @@ This project has been continuously tested throughout the development stages usin
 
     | Section | Performance | Accessibility | Best Practices | SEO |
     | --- | --- | --- | --- | --- |
-    | Home |  |  |  |  |
-    | Post Page |  |  |  |  |
-    | Feed | |  |  |  |
-    | Saved | |  | |  |
-    | Sign Up |  |  |  |  |
-    | Sign in |  |  |  | |
-    | Profile |  |  |  |  |
+    | Home | 80 | 94 | 78 | 100 |
+    | Post Page | 79 | 88 | 78 | 100 |
+    | Feed | 97 | 94 | 78 | 100 |
+    | Saved | 97 | 100 | 78 | 100 |
+    | Sign Up | 87 | 86 | 96 | 91 |
+    | Sign in | 88 | 86 | 96 | 91 |
+    | Profile | 95 | 85 | 78 | 91 |
 
 * **For Mobile devices:**
 
     | Section | Performance | Accessibility | Best Practices | SEO |
     | --- | --- | --- | --- | --- |
-    | Home |  |  |  |  |
-    | Post Page |  |  |  |  |
-    | Feed |  |  |  |  |
-    | Saved |  |  |  |  |
-    | Sign Up | | | |  |
-    | Sign in | |  | |  |
-    | Profile |  |  | |  |
+    | Home | 58 | 94 | 78 | 100 |
+    | Post Page | 54 | 94 | 78 | 100 |
+    | Feed | 62 | 100 | 74 | 100 |
+    | Saved | 72 | 100 | 74 | 100 |
+    | Sign Up | 84 | 94 | 96 | 100 |
+    | Sign in | 84 | 94 | 96 | 100 |
+    | Profile | 70 | 85 | 78 | 92 |
 
 
 ### **Manual Testing**
 Manual testing for this project was carried out as follows: 
-- Users can see sign-in, sign-up, and about pages only when not logged in.
+- Users can see sign-in, sign-up, and home pages only when not logged in.
 - Users can create a new account.
 - Users can then, sign in to their account and then be redirected to the home page.
 - Users can log out.
@@ -408,7 +408,7 @@ Manual testing for this project was carried out as follows:
 - All NavLinks and buttons go to their destination.
 - Clicking on the post image brings you to the post's page.
 - You can like, downvote and save and also undo all of these actions if you change your mind.
-- Once you hover over the like/comment/save icons, they let you know if you need to sign-in to use this feature, and once clicked on if the user is signed out, you will be redirected to the sign-in page.
+- Once you hover over the like/comment/save icons, they let you know if you need to sign-in to use this feature.
 - The user is notified of what each icon represents. In each post page, if the user is the owner, the three dots to the right side of the post image will bring up the edit and delete feature, both icons have a text description telling users what they represent.
 - The site was continuously built on google chrome, and once built, it was successfully tested on safari browser. The only issue found on safari was the inability to sign-in properly, which was resolved after some research on Slack. (mentioned and detailed in the fixed bugs section below) 
 
