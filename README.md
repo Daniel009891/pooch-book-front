@@ -104,17 +104,17 @@ A live version of this website will be found here: https://pooch-book-front-5784
 
 ### **User Demographic**
 
+This application has been designed for users with all kinds of pets and ages, to showcase their pets adventures and to make friends with like minded owners. Make your fury best friend a profile and start interacting!
 
 
 ### **Site Goals**
 
-
+The goal for this site has been to build a content sharing platform to allow users to make social media profiles for their pets. Including adding posts, following and unfollowing each other, liking or downvoting posts, as well as saving your favourite posts. A search bar is also provided to search for posts using keywords, or simply search a users name.
 
 
 ### **Audience**
 
-
-
+For animal lovers and their pets! Owners looking to make friends or simply an animal lover with no pets! All are accepted.
 
 ### **User Stories**
 User Stories and Backend Tasks can be found in this GitHub repository project Kanban board, and for this project, all user stories can be found [here](https://github.com/users/Daniel009891/projects/4)
