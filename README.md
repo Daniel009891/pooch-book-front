@@ -189,17 +189,17 @@ The images used for the posts and pet profiles were sourced from google, but mos
 ### **NavBar**
 NavBar, the user is not logged in.
 
-![screenshot]()
+![screenshot](documentation/features/nav-bar-logged-out.png)
 
 NavBar, the user is logged in.
 
-![screenshot]()
+![screenshot](documentation/features/nav-bar-logged-in.png)
 
 ### **Home Landing Page**
 
 The home screen and landing page, with the "recommended users to follow" sidebar.
 
-![screenshot]()
+![screenshot](documentation/features/home-page.png)
 
 ### **Post Page**
 
