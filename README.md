@@ -124,33 +124,31 @@ User Stories and Backend Tasks can be found in this GitHub repository project Ka
 ### **Colour Scheme**
 The colour scheme was chosen from researching trending colour schemes on this website:
 [coolers](https://coolors.co/palettes/trending).
-- The background colour for the app is  **
-- The background colour for the content boxes is **
-- The background colour for the NavBar is a linear-gradient **
-- The background colour for the downVotes and saved icons in posts is **
-- The background colour for headings in the signup/in page is **
-- The background colour for the "light" buttons is **
-- The background colour for the unfollow button is **
+- The background colour for the app is  * #F8F8F8 *
+- The background colour for the liked icons in posts is * #F85032 / #FFA500 *
+- The background colour for downvotes is * #FFA500 / #2142B2*
+- The background colour for the "light" buttons is * #2ed9ff *
+- The background colour for the unfollow button is * #242a3d*
 
-The colour palette in order as mentioned above.
-The source to put this palette together was [here]()
+The colour palette as mentioned above.
+The source to put this palette together was [here](https://coolors.co/)
 
-![screenshot]()
-![screenshot]()
+![screenshot](documentation/features/colour-palette.png)
+![screenshot](documentation/features/colour-palette-extra.png)
 
 
 
 ### **Typography**
 
 All fonts are from the Google Fonts library. The following fonts were chosen for the page:
-- 
-- 
+
+- 'Manrope', sans-serif was used for the whole project
 
 ### **Iconography**
 
-The logo used for this project was made using [Canva]().
+The logo used for this project was made using [Looka](https://looka.com/).
 
-![screenshot]()
+![screenshot](documentation/features/poochbook-logo-new.png)
 
 - Other icons were taken from [Font Awesome](https://fontawesome.com/)
 
@@ -158,7 +156,7 @@ The logo used for this project was made using [Canva]().
 
 Wireframe for home page/feed:
 
-![screenshot]()
+![screenshot](documentation/wireframes/home-page-wireframe.png)
 <br>
 <br>
 
