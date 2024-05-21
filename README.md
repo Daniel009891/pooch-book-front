@@ -275,35 +275,28 @@ The CRUD functionality for this project is as follows:
 
 * When making a new account, the following message will appear if any of the inputs are left blank:
 
-![screenshot]()
+![screenshot](documentation/features/sign-up-alerts.png)
 
 * Login attempts with the wrong credentials, will show the following message: 
 
-![screenshot]()
+![screenshot](documentation/features/sign-in-wrong-credentials.png)
 
 * Login attempts leaving any input blank, will show the following message: 
 
-![screenshot]()
+![screenshot](documentation/features/sign-in-blank-field.png)
 
 * Attempts to save, like or downvote your posts will show the following messages: 
 
-![screenshot]()
-![screenshot]()
+![screenshot](documentation/features/save-own-post.png)
+![screenshot](documentation/features/like-own-post.png)
 
 * If you choose to edit or delete your post, clicking the three dots on the right side of the post's image on the post page, will show the following icons, these icons display pictural descriptions on what purpose they serve, as well as a text description.
 
-![screenshot]() 
-
-![screenshot]()
+![screenshot](documentation/features/edit-delete-post.png) 
 
 * In the "Add post" section, leaving the title input blank will show the following message:
 
-![screenshot]()
-
-- Users who forget to add an image while creating a post will still see the post published, with a default image as shown below. Going back into the post page and editing the post will allow the user to rechoose an image:
-
-![screenshot]()
-
+![screenshot](documentation/features/post-form-no-title.png)
 
 ### **Future Implementations**
 Future plans for this project include:
