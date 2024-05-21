@@ -324,7 +324,6 @@ Future plans for this project include:
 - Javascript
 - React
 
-
 ### **Frameworks, Libraries, and Programs Used**
 - [Axios](https://axios-http.com/): a promised-based HTTP client for JavaScript. It has the ability to make HTTP requests from the browser and handle the transformation of request and response data.
 - [Favicon](https://favicon.io/): Used to generate the favicon image from a logo generated.
@@ -358,19 +357,18 @@ This project has been continuously tested throughout the development stages usin
 - Manual Testing
 
 ### **Validator Testing**
-- All HTML files passed through the HTML checker with no errors.
+- Index.html file passed through the HTML checker with 3 errors. These errors are due to existing template code.
 
-![screenshot]()
-
+![screenshot](documentation/testing/html-validation-top.png)
+![screenshot](documentation/testing/html-validation-bottom.png)
 
 - CSS files pass through the Jigsaw validator without error.
 
-![screenshot]()
+![screenshot](documentation/testing/css-validator.png)
 
 - All JSX code was validated and corrected throughout the development of the project.
 
-![screenshot]()
-
+![screenshot](documentation/testing/jsx-validation.png)
 
 #### **LightHouse testing**
 
