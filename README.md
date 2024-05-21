@@ -488,6 +488,15 @@ The link To GitHub KanBan Project - [here](https://github.com/users/Daniel009891
 
 ### **Fixed bugs and solutions**
 
+- There was an issue with logging in through safari, once I added the credentials it would jump back to the sign-in page.
+    * Solution: Upon researching in Slack, the issue was with the JWT json web token as a HTTP-only cookie in the browser,
+    in the settings in Safari, enabling "Allow cross-website tracking" resolved the issue and it was possible to sign-in.
+
+- Errors would show up in the console claiming that there were several icons with "class" instead of "className" from copying and pasting from font awesome.
+    * Solution: Searching all icons in the sidebar on GitHub, this was quickly resolved
+
+- CORS headers error which prevented my API from connecting with my front end. 
+    * Solution: searching on slack I found that checking the CLIENT_ORIGIN and CLIENT_ORIGIN_DEV config vars was the issue. A trailing / caused the issue.
 
 
 ### **Unfixed bugs**
