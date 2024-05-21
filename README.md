@@ -238,29 +238,29 @@ The Saved page consists of posts the user has specifically saved for future view
 
 Sign-in page, along with a link to sign up for an account if you haven't already!
 
-![screenshot]()
+![screenshot](documentation/features/sign-in-page.png)
 
 ### **Sign-up**
 
 Sign-up page, along with a link to sign in if you have an account already!
 
 
-![screenshot]()
+![screenshot](documentation/features/sign-up-page.png)
 
 ### **No results found**
 #### The "No results image" will appear when:
 
 * The search bar entry does not exist:
 
-![screenshot]()
+![screenshot](documentation/features/no-results-found.png)
 
 * An invalid HTTP request is made:
 
-![screenshot]()
+![screenshot](documentation/features/invalid-page.png)
 
 * On the user's profile page, if no posts have been added yet:
 
-![screenshot]()
+![screenshot](documentation/features/no-results-found-profile.png)
 
 ### **CRUD**
 The CRUD functionality for this project is as follows:
