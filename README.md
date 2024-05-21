@@ -168,13 +168,13 @@ Wireframe for post page:
 
 Wireframe for profile page:
 
-![screenshot]()
+![screenshot](documentation/wireframes/profile-page-wireframe.png)
 <br>
 <br>
 
-Wireframe for the page to create a form:
+Wireframe for the page to create a post:
 
-![screenshot]()
+![screenshot](documentation/wireframes/post-create-page-wireframe.png)
 <br>
 <br>
 
