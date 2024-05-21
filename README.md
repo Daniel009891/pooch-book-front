@@ -553,7 +553,7 @@ The following bullet points detail the steps gone through to set up this project
 - [Slack](https://www.slack.com/) - for helpful tips from fellow students!
 - [W3 Schools](https://www.w3schools.com/)
 - [Grammarly](https://app.grammarly.com/) - for spell checking the readme and about page.
-- [Color hunt](https://colorhunt.co/) - for the colour palette in the design section.
+- [Coolors](https://coolors.co/) - for the colour palette in the design section.
 
 
 ### **Media**
