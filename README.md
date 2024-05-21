@@ -232,7 +232,7 @@ The Saved page consists of posts the user has specifically saved for future view
 - The profile page contains a bio section, the bars in the corner to edit your profile and change your username or password.
 - The page also holds all of the posts that the owner of the page has added.
 
-![screenshot]()
+![screenshot](documentation/features/profile-page.png)
 
 ### **Sign-in**
 
