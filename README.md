@@ -162,7 +162,7 @@ Wireframe for home page/feed:
 
 Wireframe for post page:
 
-![screenshot]()
+![screenshot](documentation/wireframes/post-page-wireframe.png)
 <br>
 <br>
 
